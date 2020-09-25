@@ -60,15 +60,9 @@ class DoublyLinkedList:
     * need to review
     """
     def remove_from_head(self):
-        # if self.head is None and self.tail is None:
-        #     return None
-        # elif self.head is self.tail:
-        #     value = self.head.value
-        #     self.head = None
-        #     self.tail = None
-        #     return value
-        # else:
+        # save value to return
         value = self.head.value
+        #use delete function because it updates pointers and deletes head
         self.delete(self.head)
         return value
 
@@ -102,14 +96,6 @@ class DoublyLinkedList:
     Returns the value of the removed Node.
     """
     def remove_from_tail(self):
-        # if self.head is None and self.tail is None:
-        #     return None
-        # elif self.head is self.tail:
-        #     value = self.head.value
-        #     self.head = None
-        #     self.tail = None
-        #     return value
-        # else:
         value = self.tail.value
         self.delete(self.tail)
         return value
@@ -165,15 +151,20 @@ class DoublyLinkedList:
     in the List.
     """
     def get_max(self):
+        # check if dll is empty
         if not self.head:
             return None
+
+        # keep track of current node, max
         max_value = self.head.value
         curr_node = self.head
-        while curr_node:
+
+        #loop through dll to check max_value
+        while curr_node: # same as while current_node is not None:
             if curr_node.value > max_value:
                 max_value = curr_node.value
-
             curr_node = curr_node.next
+
         return max_value
 
 

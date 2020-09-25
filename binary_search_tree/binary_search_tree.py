@@ -123,63 +123,63 @@ class BSTNode:
 
 #     # Print all the values in order from low to high
 #     # Hint:  Use a recursive, depth first traversal
-#     def in_order_print(self):
+    def in_order_print(self):
 
-#         pass
+        pass
 
-#     # Print the value of every node, starting with the given node,
-#     # in an iterative breadth first traversal
-#     def bft_print(self):
-#         # create a queue
-#         # enqueue the first node (self)
+    # Print the value of every node, starting with the given node,
+    # in an iterative breadth first traversal
+    def bft_print(self):
+        # create a queue
+        # enqueue the first node (self)
 
-#         # while there is data on the queue
-#             # dequeue from queue on to current_node
-#             # print the current_node's value
+        # while there is data on the queue
+            # dequeue from queue on to current_node
+            # print the current_node's value
 
-#             # if the current node has a left child
-#                 # enqueue the left child
+            # if the current node has a left child
+                # enqueue the left child
 
-#             # check if right child exists
-#                 # enqueue right child
-#         pass
+            # check if right child exists
+                # enqueue right child
+        pass
 
-#     # Print the value of every node, starting with the given node,
-#     # in an iterative depth first traversal
-#     def dft_print(self):
-#         pass
+    # Print the value of every node, starting with the given node,
+    # in an iterative depth first traversal
+    def dft_print(self):
+        pass
 
-#     # Stretch Goals -------------------------
-#     # Note: Research may be required
+    # Stretch Goals -------------------------
+    # Note: Research may be required
 
-#     # Print Pre-order recursive DFT
-#     def pre_order_dft(self):
-#         pass
+    # Print Pre-order recursive DFT
+    def pre_order_dft(self):
+        pass
 
-#     # Print Post-order recursive DFT
-#     def post_order_dft(self):
-#         pass
+    # Print Post-order recursive DFT
+    def post_order_dft(self):
+        pass
 
-# """
-# This code is necessary for testing the `print` methods
-# """
-# bst = BSTNode(1)
+"""
+This code is necessary for testing the `print` methods
+"""
+bst = BSTNode(1)
 
-# bst.insert(8)
-# bst.insert(5)
-# bst.insert(7)
-# bst.insert(6)
-# bst.insert(3)
-# bst.insert(4)
-# bst.insert(2)
+bst.insert(8)
+bst.insert(5)
+bst.insert(7)
+bst.insert(6)
+bst.insert(3)
+bst.insert(4)
+bst.insert(2)
 
-# bst.bft_print()
-# bst.dft_print()
+bst.bft_print()
+bst.dft_print()
 
-# print("elegant methods")
-# print("pre order")
-# bst.pre_order_dft()
-# print("in order")
-# # bst.in_order_dft()
-# print("post order")
-# bst.post_order_dft()
+print("elegant methods")
+print("pre order")
+bst.pre_order_dft()
+print("in order")
+# bst.in_order_dft()
+print("post order")
+bst.post_order_dft()
